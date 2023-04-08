@@ -1,0 +1,446 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+}
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    display: block;
+}
+
+
+/* navigation bar */
+/* 왼쪽 상단 작은 로고 */
+
+nav {
+    display: block;
+    background-color: white;
+    height: 0.2rem;
+    margin: 2rem;
+    margin-top: 1rem;
+    line-height: 40px;
+    
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu img {
+    height: 1.2rem;
+}
+
+.small-logo {
+    display: flex;
+    float: left;
+    margin: 0;
+}
+
+
+.small-logo img {
+    height: 2rem;
+}
+
+/*첫번째 페이지 */
+/* 메인로고를 보여주는 헤더이자 첫번째 페이지 */
+/* 정중앙에 메인 로고 띄우고 밑에 설명 두줄 간략히 첨부 */
+
+.first-page:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 0.5;
+    background-image: url("./media/logobackground.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.first-page{
+    position: relative;
+    padding-top: 200px;
+}
+
+
+.first-title {
+    text-align: center;
+}
+
+
+.title-description {
+    font-size: 20px;
+}
+
+.main-logo{
+    font-family: Allura, italic;
+    font-size: 10rem;
+    margin-bottom: 5rem;
+}
+
+.first-content{
+    margin-bottom: 20rem;
+
+}
+
+/* second page */
+/* 대표적인 기능 3가지 */
+.second-page {
+    height: 750px;
+}
+
+.second-page .container{
+    margin: 13rem;
+    margin-bottom: 0rem;
+    height: 10px;
+}
+
+.second-page .container .second-main img {
+    position: relative;
+    height: 40rem;
+}
+
+.second-main {
+    display: inline;
+    position: relative;
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.line {
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+
+.line img {
+    width: 2px;
+    height: 45rem;
+}
+
+/* 기능 1,2,3 */
+
+.func-expl {
+    display: inline;
+    text-align: center;
+    width: 40%;
+    float: left;
+    padding-top: 4.5rem;
+}
+
+.function {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.func-expl p {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.explanation {
+    color: rgb(91, 91, 91);
+    margin-bottom: 2rem;
+}
+
+.func-expl .func-expl-course {
+    margin: 0 auto;
+    /* bottom: 40rem; */
+    position: relative;
+    /* height: 50%; */
+}
+
+.func-expl .func-expl-navi {
+    margin: 0 auto;
+    /* bottom: 36rem; */
+    position: relative;
+    /* height: 30%; */
+}
+
+.func-expl .func-expl-route {
+    margin: 0 auto;
+    /* bottom: 30rem; */
+    position: relative;
+    /* height: 20%; */
+}
+
+
+/* 세번째 페이지 */
+
+.third-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 650px;
+    margin-top: 5rem;
+}
+
+.third-container .title {
+    margin-bottom: 2rem;
+}
+
+.walk-link {
+    display: block;
+    /* background-color: white; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.running-link {
+    display: block;
+    /* background-color: white; */
+    width: 100%;
+    border-left: 2px solid #D3D3D3;
+    border-right: 2px solid #D3D3D3;
+    margin: 0 auto;
+}
+
+.cycle-link {
+    display: block;
+    /* background-color: white; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.walk-link:hover, .running-link:hover, .cycle-link:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.third-container .content {
+    margin-top: 2rem;
+}
+
+.third-container .summary-walk .content {
+    text-align: center;
+}
+
+.summary-walk, .summary-cycle, .summary-running {
+    padding-top: 7rem;
+    text-align: center;
+}
+
+/* 네번째 페이지 */
+/* 산책 상세 페이지 */
+/* 페이지를 좌/우로 나눠 왼쪽에는 계절별 산책 코스 추천,오른쪽에는 테마별 산책 코스 추천 예시 첨부 */
+/* 공통부분 */
+.fourth-page {
+    display: block;
+}
+
+.fourth-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 780px;
+    /* column-gap: 2rem; */
+    text-align: center;
+}
+
+.fourth-left {
+    text-align: center;
+    float: left;
+}
+
+.fourth-container .content{
+    font-size: 19px;
+    margin-top: 18rem;
+    text-align: center;
+    /* align-items: center;  */
+}
+
+.fourth-content p {
+    margin-right: 100px;
+}
+
+.example-season{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+
+.fourth_image_1 img{
+    height: 30rem;
+    position: absolute;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.fourth_image_2 img{
+    height: 30rem;
+    z-index: 2;
+}
+
+.example-theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+/* <!-- 다섯번째 페이지 --> */
+/* <!-- 러닝 상세 페이지 --> */
+/* <!-- 페이지를 위/아래(왼/가운데/오)로 나누어서 */
+/* 위: 최선의 경로 제공 */
+/* 아래(왼)  : 보이스 코치 기능 */
+/* 아래(중간): 기록 및 경로 공유 */
+/* 아래(오)  : 러닝크루 모집, 대회 정보 제공--> */
+/* 공통부분 */
+
+.fifth-page{
+    width: 100%;
+    height: 1500px;
+}
+
+.crosswalk img{
+    overflow: hidden;
+    width: 58rem;
+}
+
+
+.main-content{
+    text-align: center;
+}
+
+/* 개별부분 */
+
+.main-phrase-content{
+    text-align: center;
+}
+
+.main-phrase{
+    font-size: 19px;
+    margin-bottom: 1rem;
+}
+
+.main-phrase span{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.main-phrase p {
+    display: inline;
+    font-weight: 700;
+}
+
+.crosswalk {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
+
+/* 아래쪽세션 */
+.below-top{
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    font-size: 20px;
+}
+
+.below-left{
+    padding-top: 7rem;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 20rem;
+}
+
+
+.below-middle{
+    padding-top: 7rem;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 30rem;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: cadetblue;
+}
+
+/* 아래 오른쪽 세션 */
+.below-right{
+    padding-top: 7rem;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 20rem;
+}
+
+.phrase{
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.phrase span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.functions{
+    margin-top: 3rem;
+    font-size: 125px;
+}
+
+.six {
+    display: block;
+}
+
+.sixth-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 750px;
+}
+
+.example-img {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.example-img img {
+    height: 35rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+.section-cycle-main {
+    margin-top: 12rem;
+    margin-left: 5rem;
+}
+
+.title-cycle-main {
+    font-size: 30px;
+    text-align: left;
+}
+
+.content-cycle-main {
+    margin-top:30px;
+    color: #808080;
+    text-align: left;
+}
