@@ -7,9 +7,8 @@
 }
 
 html{
-    font-family: 'Allura', cursive;
-    font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 
 body{
@@ -23,19 +22,29 @@ body{
 nav {
     display: block;
     background-color: white;
-    height: 8px;
+    height: 0.2rem;
     margin: 2rem;
+    margin-top: 1rem;
     line-height: 40px;
     
 }
 
+.menu {
+    text-align: right;
+}
+
+.menu img {
+    height: 1.2rem;
+}
+
 .small-logo {
+    display: flex;
     float: left;
     margin: 0;
 }
 
+
 .small-logo img {
-    margin-top: -2rem;
     height: 2rem;
 }
 
@@ -63,27 +72,20 @@ nav {
     padding-top: 200px;
 }
 
-.container{
-
-}
-
-
 
 .first-title {
     text-align: center;
 }
 
-.title-description{
-}
 
 .title-description {
     font-size: 20px;
 }
 
 .main-logo{
-    font-family: Allura;
+    font-family: Allura, italic;
     font-size: 10rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .first-content{
@@ -93,79 +95,207 @@ nav {
 
 /* second page */
 /* 대표적인 기능 3가지 */
-/* 페이지 왼,가운데, 오로 삼분할*/
-
-.second-page .container .second-main img {
-    height: 100%;
-
+.second-page {
+    height: 750px;
 }
 
-.container{
+.second-page .container{
+    margin: 13rem;
+    margin-bottom: 0rem;
+    height: 10px;
+}
 
+.second-page .container .second-main img {
+    position: relative;
+    height: 40rem;
+}
+
+.second-main {
+    display: inline;
+    position: relative;
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.line {
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+
+.line img {
+    width: 2px;
+    height: 45rem;
 }
 
 /* 기능 1,2,3 */
-.func-expl{
 
+.func-expl {
+    display: inline;
+    text-align: center;
+    width: 40%;
+    float: left;
+    padding-top: 4.5rem;
 }
-.function{
 
+.function {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
-.explanation{
 
+.func-expl p {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
 }
+
+.explanation {
+    color: rgb(91, 91, 91);
+    margin-bottom: 2rem;
+}
+
+.func-expl .func-expl-course {
+    margin: 0 auto;
+    /* bottom: 40rem; */
+    position: relative;
+    /* height: 50%; */
+}
+
+.func-expl .func-expl-navi {
+    margin: 0 auto;
+    /* bottom: 36rem; */
+    position: relative;
+    /* height: 30%; */
+}
+
+.func-expl .func-expl-route {
+    margin: 0 auto;
+    /* bottom: 30rem; */
+    position: relative;
+    /* height: 20%; */
+}
+
 
 /* 세번째 페이지 */
-/* 산책,러닝,사이클 세 섹션으로 나뉜다는 것을 보여주는 페이지 */
-/* 삼각형 형태로 가운데 위, 인쪽 아래, 오른쪽 아래에 원형의 섹션 속에 이미지 첨부하여 각 항목 제공 */
-/* 공통부분 */
 
-.third-page{
-
+.third-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 650px;
+    margin-top: 5rem;
 }
 
-.container{
-
+.third-container .title {
+    margin-bottom: 2rem;
 }
 
-.summary{
-
+.walk-link {
+    display: block;
+    /* background-color: white; */
+    width: 100%;
+    margin: 0 auto;
 }
 
-.summary-title{
-
+.running-link {
+    display: block;
+    /* background-color: white; */
+    width: 100%;
+    border-left: 2px solid #D3D3D3;
+    border-right: 2px solid #D3D3D3;
+    margin: 0 auto;
 }
 
-
-.third-page img{
-
+.cycle-link {
+    display: block;
+    /* background-color: white; */
+    width: 100%;
+    margin: 0 auto;
 }
 
-.summary-content{
+.walk-link:hover, .running-link:hover, .cycle-link:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
 
+.third-container .content {
+    margin-top: 2rem;
+}
+
+.third-container .summary-walk .content {
+    text-align: center;
+}
+
+.summary-walk, .summary-cycle, .summary-running {
+    padding-top: 7rem;
+    text-align: center;
 }
 
 /* 네번째 페이지 */
 /* 산책 상세 페이지 */
 /* 페이지를 좌/우로 나눠 왼쪽에는 계절별 산책 코스 추천,오른쪽에는 테마별 산책 코스 추천 예시 첨부 */
 /* 공통부분 */
-.fourth-page{
-
+.fourth-page {
+    display: block;
 }
 
-.fourth-page .container{
-
+.fourth-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 780px;
+    /* column-gap: 2rem; */
+    text-align: center;
 }
 
-.title-content{
-
+.fourth-left {
+    text-align: center;
+    float: left;
 }
 
-.title{
-
+.fourth-container .content{
+    font-size: 19px;
+    margin-top: 18rem;
+    text-align: center;
+    /* align-items: center;  */
 }
-.content{
 
+.fourth-content p {
+    margin-right: 100px;
+}
+
+.example-season{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+
+.fourth_image_1 img{
+    height: 30rem;
+    position: absolute;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.fourth_image_2 img{
+    height: 30rem;
+    z-index: 2;
+}
+
+.example-theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
 }
 
 
@@ -180,65 +310,56 @@ nav {
 
 .fifth-page{
     width: 100%;
-    height: 100%;
+    height: 1500px;
 }
 
 .crosswalk img{
     overflow: hidden;
-    width: 60%;
+    width: 58rem;
 }
 
-.container{
-
-}
-
-.content{
-
-}
 
 .main-content{
     text-align: center;
 }
 
 /* 개별부분 */
-.top{
-
-}
 
 .main-phrase-content{
     text-align: center;
 }
 
 .main-phrase{
-    font-size: 25px;
+    font-size: 19px;
     margin-bottom: 1rem;
 }
 
 .main-phrase span{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 22px;
     margin-bottom: 1rem;
 }
 
-
-.example{
-
+.main-phrase p {
+    display: inline;
+    font-weight: 700;
 }
+
+.crosswalk {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
 
 /* 아래쪽세션 */
-.below{
-       
-}
-
 .below-top{
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
     margin-top: 3rem;
     font-size: 20px;
 }
 
 .below-left{
-    padding-top: 2rem;
+    padding-top: 7rem;
     margin: 0 auto;
     float: left;
     text-align: center;
@@ -248,12 +369,12 @@ nav {
 
 
 .below-middle{
-    padding-top: 2rem;
+    padding-top: 7rem;
     margin: 0 auto;
     float: left;
     text-align: center;
     width: 33.3%;
-    height: 20rem;
+    height: 30rem;
     border-left-style: solid;
     border-right-style: solid;
     border-color: cadetblue;
@@ -261,7 +382,7 @@ nav {
 
 /* 아래 오른쪽 세션 */
 .below-right{
-    padding-top: 2rem;
+    padding-top: 7rem;
     margin: 0 auto;
     float: left;
     text-align: center;
@@ -281,49 +402,45 @@ nav {
 }
 
 .functions{
-    margin-top: 0;
+    margin-top: 3rem;
     font-size: 125px;
 }
 
-
-
-/* sixthpage */
-/* 사이클 상세 페이지 */
-/* 페이지를 왼/오(위/아래)로 세 섹션으로 나눈후
-    왼: 구현화면
-    오(위)  : 자전거 아이콘과 자전거 전용도로 내용 첨부
-    오(아래): 근처 자전거 대여소, 정비소 위치 내용과 지도 첨부 */
-
-/* 공통부분 */
-.sixth-page{
-
+.six {
+    display: block;
 }
 
-.container{
-
+.sixth-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 750px;
 }
 
-.section-title{
-
+.example-img {
+    margin-left: 100px;
+    text-align: center;
 }
 
-.section-content{
-    
-}
-/* 개별 부분 */
-/* 왼쪽 블럭 */
-.left{
-
+.example-img img {
+    height: 35rem;
+    align-items: center;
+    text-align: center;
 }
 
-/* 오른쪽 블럭 */
-.right-top{
 
+.section-cycle-main {
+    margin-top: 12rem;
+    margin-left: 5rem;
 }
 
-/* 오른쪽 아래 블럭 */
-.right-below{
-
+.title-cycle-main {
+    font-size: 30px;
+    text-align: left;
 }
 
+.content-cycle-main {
+    margin-top:30px;
+    color: #808080;
+    text-align: left;
 }
